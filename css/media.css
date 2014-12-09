@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Ficons";
+  src: url("fonts/foundation-icons.eot");
+  src: url("fonts/foundation-icons.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-icons.woff") format("woff"), url("fonts/foundation-icons.ttf") format("truetype"), url("fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* min-in */
+@media only screen and (max-width: 40em) {
+  .top-bar-section ul li {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  #panelContainer .panel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  #panelContainer .panel ul {
+    overflow: hidden;
+  }
+  #panelContainer .panel li.thumb, #panelContainer .panel li.name {
+    float: left;
+    padding: 5px 5px 0px 5px;
+  }
+  #panelContainer .panel li.thumb {
+    width: 35%;
+  }
+  #panelContainer .panel li.name {
+    width: 60%;
+  }
+  #panelContainer .panel li.name:after {
+    content: '\f10b';
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    color: #fd9a23;
+    font-size: 2rem;
+  }
+  #panelContainer .panel li.name h6 {
+    text-align: left;
+    color: #676464;
+    padding: 15px 25px 5px 0px;
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+  #panelContainer .panel li.button {
+    display: none;
+  }
+
+  .panel:hover {
+    border-color: #fd9a23;
+  }
+
+  #resultsBar .left-small {
+    border-color: #fff;
+  }
+  #resultsBar .menu-icon span {
+    margin-right: 15px;
+  }
+
+  #itemContainer {
+    padding: 1rem 0rem;
+  }
+
+  #itemDet .button-group li:first-child {
+    width: 75%;
+  }
+  #itemDet .button-group a {
+    height: 91px;
+  }
+  #itemDet .button-group li.buy a.button {
+    padding-top: 2rem;
+  }
+
+  #moreDetails {
+    margin: 1rem 1rem 2rem;
+    font-size: .9rem;
+  }
+}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+  .container, .row {
+    max-width: 1250px;
+    margin: 0px auto;
+  }
+
+  #topBar ul.right > li:not(#social-count) {
+    padding-top: 10px;
+    height: 60px;
+  }
+
+  #social-count a {
+    line-height: 1rem;
+  }
+
+  #branding {
+    height: 375px;
+  }
+  #branding .container {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    margin: 0px auto;
+    padding: 4% 3% 5%;
+  }
+
+  #resultsBar h5 {
+    float: left;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+  #resultsBar ul li, #resultsBar a {
+    font-size: 1.125rem;
+  }
+  #resultsBar .top-bar-section > ul > li {
+    width: 145px;
+    text-align: right;
+    border-left: 1px solid #ffad1f;
+  }
+  #resultsBar .top-bar-section > ul > li:last-child {
+    border-right: 1px solid #ffad1f;
+  }
+  #resultsBar .menu {
+    background-color: #f17a25;
+  }
+  #resultsBar .menu li {
+    border-bottom: 1px solid #feb432;
+  }
+  #resultsBar .menu .submenu {
+    background-color: #feb432;
+  }
+  #resultsBar .menu .submenu li {
+    border-bottom: 1px solid #fd9a23;
+  }
+  #resultsBar .menu li, #resultsBar .menu a {
+    width: 100%;
+    padding: 5px;
+    font-size: .825rem;
+    text-align: left;
+    text-indent: 10px;
+  }
+  #resultsBar .menu li:hover {
+    background-color: #fd9a23;
+  }
+  #resultsBar .menu li.selected {
+    position: relative;
+  }
+  #resultsBar .menu li.selected:after {
+    content: '\f126';
+    position: absolute;
+    right: 10px;
+    font-size: .9rem;
+  }
+  #resultsBar .submenu li {
+    border-left: 4px solid #fd9a23;
+  }
+
+  #panelContainer .panel {
+    width: 32% !important;
+    margin-right: 1%;
+    float: left;
+  }
+  #panelContainer ul {
+    margin: 0;
+  }
+
+  #itemContainer {
+    margin: 1rem auto;
+  }
+
+  #itemPic {
+    padding: 3rem 30%;
+  }
+
+  #itemDet {
+    position: relative;
+    padding: 2rem 3rem;
+  }
+  #itemDet:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    bottom: -30px;
+    left: 29%;
+    border-top-color: #fd9a23;
+  }
+  #itemDet h4 {
+    width: 90%;
+  }
+  #itemDet ul:not(.button-group) {
+    width: 80%;
+    margin: 0rem auto 1.5rem;
+  }
+  #itemDet ul:not(.button-group) li {
+    width: 45%;
+    padding: 0px 5px;
+  }
+  #itemDet .button-group {
+    width: 75%;
+  }
+  #itemDet .button-group a {
+    height: 75px;
+    padding-top: 1.5rem;
+  }
+
+  #pcList {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .reveal-modal {
+    padding: 10px 20px;
+  }
+  .reveal-modal h5 {
+    width: 75%;
+  }
+
+  #register-Modal ul, #logIn-Modal ul {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #fd9a23;
+    margin-bottom: 40px;
+  }
+  #register-Modal .button, #register-Modal button, #logIn-Modal .button, #logIn-Modal button {
+    padding: 5px 10px 10px;
+  }
+  #register-Modal button[type='submit']:after, #logIn-Modal button[type='submit']:after {
+    position: relative;
+    top: 3px;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    content: '\f126';
+  }
+  #register-Modal .agree, #logIn-Modal .agree {
+    width: 70%;
+  }
+
+  #bottom-banner {
+    padding: 15px 0px;
+    background-color: #00a8aa;
+    text-align: center;
+  }
+  #bottom-banner h6 {
+    color: #fffdf7;
+  }
+  #bottom-banner ul {
+    margin: 0;
+  }
+  #bottom-banner ul li {
+    width: 4.7%;
+    margin: 0.5rem;
+  }
+}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+  #branding {
+    height: 420px;
+  }
+  #branding .container {
+    left: 25%;
+    width: 50%;
+  }
+
+  #panelContainer .panel {
+    width: 19% !important;
+  }
+
+  #itemDetails {
+    background-color: #fff;
+  }
+
+  #itemContainer {
+    width: 97%;
+    max-width: 1250px;
+    margin: 1rem auto;
+    background-color: #676464;
+    border: 1px solid #d8d8d8;
+  }
+
+  #itemPic {
+    padding: 5rem;
+  }
+
+  #itemDet {
+    position: relative;
+    padding: 2rem 3rem;
+  }
+  #itemDet:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0%;
+    left: 0px;
+    border-left-color: #fff;
+  }
+  #itemDet:after {
+    left: 33%;
+  }
+  #itemDet .button-group {
+    margin-left: 20%;
+  }
+
+  #moreDetails {
+    padding: 3rem;
+  }
+}

@@ -1,0 +1,69 @@
+// $teal: #5daba8 0db3af;
+// $dk-teal: #017f86;
+// $gray: #676464;
+// $watermelon: #ed4f50;
+// $orange: #ff9a1f;
+// $dk-orange: #e47136;
+// $brown: #ad4601;
+$teal: #00a8aa;
+$dk-teal: #017f86;
+$gray: #676464;
+$watermelon: #ed4f50;
+$dkWatermelon:  darken($watermelon, 20%);
+$yellow: #feb432;
+$orange: #fd9a23;
+$dk-orange: #f17a25;
+
+
+
+@font-face {
+  font-family: "Ficons";
+  src: url("fonts/foundation-icons.eot");
+  src: url("fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("fonts/foundation-icons.woff") format("woff"),
+       url("fonts/foundation-icons.ttf") format("truetype"),
+       url("fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* min-in */
+@mixin bgd($bgd, $font) {
+  background-color: $bgd;
+  color: $font;
+}
+
+@mixin shadow( $hv:2px, $vv:1px) {
+	-webkit-box-shadow: $hv $hv $hv $vv  rgba(0,0,0, 0.3);
+	-moz-box-shadow: $hv $hv $hv $vv rgba(0,0,0, 0.3);
+	box-shadow: $hv $hv $hv $vv rgba(0,0,0, 0.3);
+}
+
+
+@mixin transition($prop:all, $time:0.8s) {
+  transition: $prop $time; 
+}
+
+// @mixin sprite( $size:100%) {
+//   background: url(../img/sprites.png) no-repeat;
+//   background-size: $size;
+// }
+
+@mixin arrow($top:25px, $side:25px) {
+  content:'';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: $top solid transparent;
+  border-bottom: $top solid transparent;
+  border-left: $side solid transparent;
+  border-right: $side solid transparent;
+}
+
+@mixin radius ( $rad:5px) {
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  border-radius: $rad;
+}
+
+

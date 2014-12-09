@@ -1,0 +1,413 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diapers Savers | Welcome</title>
+    <!-- favicon -->
+    <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
+    <link rel="icon" href="img/favicon.png">
+    <!-- css -->
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Solid|Handlee' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body title="Diaper Savers. Compare Diaper Prices and Save">
+    <header>
+      <nav id="topBar" class="top-bar hide-for-small">
+        <!-- social-count -->
+        <ul id="social-count" class="inline-list title-area">
+          <li><a href="/">GooglePlus</a></li>
+          <li><a href="/">Facebook</a></li>
+        </ul> 
+         <!-- open advertisement -->      
+        <div class="top-bar-ad">
+        <a href="#" data-reveal-id="top-ad-Alert">What is an Alert?</a>
+        </div>
+         <!-- top-navigation --> 
+        <div class="top-bar-section">
+          <ul class="right top-nav has-dropdown">
+            <li class="divider"></li>
+            <li id="register">
+              <a href="#" id="registerLink">Register</a>
+              <!-- signUp -->
+              <div id="registerDrop" class="f-dropdown content small">
+                <h3>Sign Up</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="brand-a signFb">Sign Up with Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#" class="brand-a signGp">Sign Up with Google</a>
+                  </li>
+                  <li id="signEmail">
+                    <span>or</span>
+                    <h6>Sign Up with Email</h6>
+                      <form>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="password" placeholder="Enter Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="checkbox" name="allowNews" id="allowNews">
+                        <label class="small">Tell me about DiapersSavers news</label>
+                        <p class="small">By signing up, I agree to Diapers Savers's Terms of Service and Privacy Policy</p>
+                        <button type="submit" class="button round">Sign up</button>
+                      </form>
+                  </li><!-- signUpEm -->
+                  <li>
+                    <span class="small">Already a Diapers Savers member?<a id="logInLinkTo" href="#" class="plain-a">Log In</a></span>
+                  </li>
+                </ul>
+              </div><!--signUpForm -->
+            </li>
+            <li id="logIn">
+              <a href="#" id="logInLink">Log In</a>
+              <!-- logInForm -->
+              <div id="logInDrop" class="f-dropdown content small">
+                <h3>Log In</h3>
+                <ul>
+                  <li>
+                    <a href="#" class="brand-a signFb">Log In with Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#" class="brand-a signGp">Log In with Google</a>
+                  </li>
+                  <li id="loginEmail">
+                    <span>or</span>
+                    <form>
+                      <input type="email" placeholder="Enter Your Email" required>
+                      <input type="password" placeholder="Enter Password" required>
+                      <input type="checkbox" name="remember" id="remember">
+                      <label class="small">Remember Me</label>
+                      <a href="#" class="plain-a">Forgot password?</a>
+                      <button type="submit" class="button round">Log In</button>
+                    </form>
+                  </li>
+                  <li>
+                    <span class="small">Don't have an account?<a id="registerLinkTo" href="#" class="plain-a">Sign In</a></span>
+                    
+                  </li>
+                </ul>
+              </div><!--signUpForm -->
+            </li><!-- log In -->
+            <li><a href="#">Help</a></li>
+            <!-- search box -->
+            <li id="topSearch" class="top-search">
+              <form  id="Search" action="" class="slide-container">
+                <label>Search</label>
+                <input type="text" >
+                <span href="#"></span>
+              </form>
+            </li>
+          </ul><!-- top-nav -->
+        </div> <!-- top-bar-section -->
+      </nav><!-- top-bar -->
+      <!-- hero branding --> 
+      <div class="branding insider text-center">
+        <h1>Diapers Savers</h1>
+        <a class="logo" href="http://www.diaperssavers.com/"><img src="img/diaperssavers.png" alt="Diapers Savers" /></a>
+        <h2>Compare Diaper Prices and Save!</h2>
+        <span id="curtain"></span>
+    </header>
+    <!-- Main Section -->
+    <div id="mainResults" class="row expand">
+      <aside  class="medium-2 columns">
+        <h1>Edit your Search</h1>
+        <h2 id="sizeBanner" class="banner">By Size</h2>
+        <ul id="selectSize">
+          <li class="hide">Include All Sizes</li>
+          <li class="hide">Newborn (Up to 10 lbs)</li>
+          <li class="hide">Size 1 (8 to 14 lbs)</li>
+          <li class="chosen remove">Size 2 (12 to 18 lbs)</li>
+          <li class="hide">Size 3 (16 to 28 lbs)</li>
+          <li class="hide">Size 4 (23 to 37 lbs)</li>
+          <li class="hide">Size 5 (More Than 27 lbs)</li>
+        </ul>  <!-- select size list  -->
+        <h2 id="brandBanner" class="banner">By Brand</h2>
+        <ul id="selectBrand">
+          <li class="hide">All Brands</li>
+          <li class="chosen remove">Huggies
+            <ul id="huggiesType">
+              <li class="hide">All Types</li>
+              <li class="chosen remove">Little Movers</li>
+              <li class="hide">Little Snugglers</li>
+              <li class="hide">Little Swimmers</li>
+              <li class="hide">Overnites</li>
+              <li class="hide">Pull-Ups</li>
+              <li class="hide">Pure and Natural</li>
+              <li class="hide">Snug and Dry</li>
+            </ul><!-- huggies types -->
+          </li>
+          <li class="hide">Pampers
+            <ul id="pamperstypes">
+              <li>All Types</li>
+              <li>Baby Dry</li>
+              <li>Cruisers</li>
+              <li>Cruisers Ultra</li>
+              <li>Easy-Ups</li>
+              <li>Extra Protection</li>
+              <li>Splashers</li>
+              <li>Swaddlers</li>
+              <li>Swaddlers Sensitive</li>
+              <li>UnderJams</li>
+            </ul><!-- pampers types -->
+          </li><!-- Pampers -->
+          <li class="hide">Earth's Best</li>
+          <li class="hide">gDiapers
+            <ul id="gdiapersTypes">
+              <li>All Types</li>
+              <li>gPants</li>
+            </ul><!-- gdiapers types -->
+          </li><!-- gDiapers -->
+          <li class="hide">Luvs
+            <ul id-"luvsTypes">
+              <li>All Types</li>
+              <li>Ultra Leakguards</li>
+            </ul><!-- luvs Types -->
+          </li><!-- luvs -->
+          <li class="hide">Seventh Generation
+            <ul id="seventhTypes">
+              <li>All Types</li>
+              <li>Free and Clear</li>
+            </ul><!--seventh types -->
+          </li>
+        </ul>  <!-- select Brand -->    
+      </aside>
+      <main class="medium-10 columns clearfix"> 
+          <div id="itemDet" class="block">
+            
+
+            <div id="itemChosen" class="row">
+              <div class="medium-4 columns medium-offset-1">
+                <img src="img/items/51RE2M54kHL.jpg"  alt="Pampers">
+              </div><!-- image container -->
+              <div id="itemInfo" class="medium-6 columns left">
+                <p>Everything you want in a diaper and nothing you don't. Bottom loving, baby pleasing performance with absolutely no fragrances, latex, petroleum based lotions or chlorine processing. You'll love the way our new, adjustable tabs give baby a soft and comfortable fit. <a id="readDet" href="#" class="small">Read more...</a></p>
+                <a href="#" data-reveal-id="setAlert">Set an Alert</a>
+                <div class="bubble right">
+                  <h5><a href="#">Lowest Price $49.19 <span class="small">($0.26/count)</span><br />at Diapers.com</a></h5>
+                  <a href="#" class="buy">Buy</a>
+                </div><!-- bubble --> 
+              </div><!-- itemInfo -->
+            </div><!-- itemChosen -->
+
+            <div id="itemChart">
+              <div id="options" class="row">
+                <form action="post" class="medium-4 columns divider">
+                  <h5>Comparing Prices for:</h5>
+                  <label>Size</label>
+                  <select name="itemSize" id="itemSize">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>`
+                    <option value="6">6</option>
+                  </select>
+                  <label>Count</label>
+                  <select name="itemCount" id="itemCount">
+                    <option value="27">27</option>
+                    <option value="54">54</option>
+                    <option value="108">108</option>
+                    <option value="135">135</option>
+                  </select>
+                </form>
+                <div id="inMember" class="medium-8 columns">
+                  <h5>Include my Membership:</h5>
+                  <div class="memberships">
+                    <ul class="inline-list">
+                      <li>AutoShip order</li>
+                      <li class="active">Amazon Mom (1-4 arrivals)</li>
+                      <li>Amazon Mom (5+ arrivals)</li>
+                    </ul>
+                  </div><!-- memberships -->
+                </div><!-- inMember -->
+                <h6>Results Sort by Price: Low to High</h6>
+              </div><!-- options -->
+              <section id="priceComparison" class="row">
+                <!-- pricing tables -->
+                <div id="pcList" class="row">
+                  <div class="large-3 columns">
+                    <ul class="pricing-table best">
+                      <li class="title">Diapers.com</li>
+                      <li class="bullet-item">$49.19 + </li>
+                      <li class="bullet-item">Free Shipping</li>
+                      <li class="price">$49.19</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                  <div class="large-3 columns">
+                    <ul class="pricing-table">
+                      <li class="title">Amazon MarketPlace</li>
+                      <li class="bullet-item">$44.99 + </li>
+                      <li class="bullet-item">$5.99 <span class="small">(S&H)</span></li>
+                      <li class="price">$50.98</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                  <div class="large-3 columns">
+                    <ul class="pricing-table">
+                      <li class="title">Amazon</li>
+                      <li class="bullet-item">$44.99 + </li>
+                      <li class="bullet-item">$5.99 <span class="small">(S&H)</span></li>
+                      <li class="price">$50.98</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                  <div class="large-3 columns">
+                    <ul class="pricing-table">
+                      <li class="title">eBay</li>
+                      <li class="bullet-item">$62.13 + </li>
+                      <li class="bullet-item">$4.94<span class="small">(S&H)</span></li>
+                      <li class="price">$67.07</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                  <div class="large-3 columns">
+                    <ul class="pricing-table">
+                      <li class="title">eBay</li>
+                      <li class="bullet-item">$62.13 + </li>
+                      <li class="bullet-item">$4.94<span class="small">(S&H)</span></li>
+                      <li class="price">$67.07</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                  <div class="large-3 columns">
+                    <ul class="pricing-table">
+                      <li class="title">eBay</li>
+                      <li class="bullet-item">$62.13 + </li>
+                      <li class="bullet-item">$4.94<span class="small">(S&H)</span></li>
+                      <li class="price">$67.07</li>
+                      <li class="cta-button"><a class="button round" href="#">Buy Now</a></li>
+                    </ul>
+                  </div><!-- pricing table -->
+                </div><!-- table container -->
+              </section>
+              <article id="moreDetails">
+                <h4>Details:</h4>
+                <h5>Huggies Little Snugglers baby diapers</h5>
+                <p>Change your infant into Little Snugglers, designed to fit the smallest of babies.</p>
+                <h5>Huggies Leak Lock protection</h5>
+                <p>Keep your baby dry with Leak Lock protection and Huggies Little Snugglers.</p>
+                <h5>Gentle Protection for Your New Baby</h5>
+                <p>Each Huggies Little Snugglers Diaper delivers softness and comfort with Leak Lock Protection to wick away moisture and features a quilted inner pad made of multiple super-absorbent layers. The soft, flexible pad is comfortable for sensitive young skin and can twist with your baby's movements. A long-lasting core helps lock in wetness, so your baby stays dry and content. Plus, the soft, breathable outer cover helps breathability and provides added comfort.</p>
+                <h5>SnugFit Waistband for a Gentle Fit</h5>
+                <p>For a secure, custom fit around your child, Huggies diapers feature a SnugFit waistband you won't find in any other diaper. The SnugFit waistband stretches to accommodate any waist size, helping keep the diaper in place.</p>
+               <h5> Shaped to Fit the Smallest of Babies</h5>
+                <p>Ranging from Preemie size all the way up to 18 pounds, each Huggies Little Snugglers diaper is shaped to fit around your babies tiny legs--even when they are still curled up while sleeping and snuggling. The Preemie and Newborn sizes feature a front cutout that fits around belly buttons, protecting sensitive umbilical sites while they heal*.</p>
+                <p>*Preemie or newborn only</p>
+                <h5>Wetness Indicator Changes Color</h5>
+                <p>Huggies Little Snugglers diapers feature a wetness indicator located on the outside of the diaper to provide parents with a cue to when their baby's diaper may need to be changedâ . The indicator changes color when wet, so you can quickly change your baby's diaper and prevent fussiness and discomfort.</p>
+                <p>All sizes P, N, 1, and 2</p>
+                <h5>Adorable Winnie the Pooh Graphics</h5>
+                <p>Little Snugglers Diapers offer lovable designs featuring sweet, colorful graphics of Winnie the Pooh Disney characters. The familiar pals add a fun touch to every diaper, especially for those spontaneous photo-op moments, and they keep your baby entertained during changing time. Each package of Little Snugglers diapers also includes Huggies reward points that are redeemable for great rewards on the Huggies website.</p>
+                <p>Huggies Little Snugglers Preemie and Newborn diapers
+                  Protect your babyâs belly button with Little Snuggler Diapers and the umbilical cord cut out.</p>
+                <h5>Huggies Wipes Keep Your Baby Clean From Top to Bottom</h5>
+                <p>And whether you're a mom, a dad, or a caregiver, you know that no diaper change is complete without a clean bottom. From the improved thickness and texture of the Huggies One & Done Wipes to Huggies Natural Care Wipes for sensitive skin (each sold separately), Huggies offers a variety of soft, high-performance wipes to fit your needs.</p>
+                <h5>Little Snugglers At a Glance</h5>
+                <p>Shaped to fit new babies: Specially shaped to gently fit little legs, even before they've uncurled.</p>
+                <p>Shaped for little belly buttons: Umbilical cord cut-out protects belly buttons as they heal*.</p>
+                <p>Contoured shape: Breathable outer cover is made to be especially gentle for your new baby.</p>
+                <p>The wetness indicator: The wetness indicator changes color to let you know when the diaper is wetâ .</p>
+                <p>Keep runny messes in: Flexible, pocketed back waistband is snug enough to help keep messes inside.</p>
+                <p>Flexible quilting inside: Pad is quilted to be soft, flexible, and absorbent, keep baby dry and comfy.</p>
+              </article><!-- moreDetails -->
+            </div><!--itemChart -->
+
+          </div><!-- itemDet -->
+      </main>
+    </div> <!-- main results container: include aside and main -->
+    <!-- Footer -->
+    <footer>
+      <div id="footer-top" class="row">
+        <div class="medium-7 columns">
+          <h3 id="why">Why use Diapers Savers?</h3>
+          <p>We search dozens of vendors to find the cheapest diapers prices.<br />Use our diaper search to compare diaper prices of:</p>
+          <div id="storesCarousel" class="activeCarousel">
+            <div><img src="img/logos/amazon.jpeg" alt="Amazon.com"></div>
+            <div><img src="img/logos/amazonMP.jpeg" alt="Amazon Marketplace"></div>
+            <div><img src="img/logos/diapers.jpeg" alt="diapers.com"></div>
+            <div><img src="img/logos/drugstore.jpeg" alt="Drugstore"></div>
+            <div><img src="img/logos/earthsBest.jpeg" alt="Earth's Best"></div>
+            <div><img src="img/logos/ebay.png" alt="eBay"></div>
+            <div><img src="img/logos/gdiapers.png" alt="gDiapers"></div>
+            <div><img src="img/logos/huggies.jpeg" alt="Huggies"></div>
+            <div><img src="img/logos/kmart.png" alt="kMart"></div>
+            <div><img src="img/logos/luvs.jpeg" alt="Luvs"></div>
+            <div><img src="img/logos/pampers.jpeg" alt="Pampers"></div>
+            <div><img src="img/logos/rakuten.jpeg" alt="Rakuten"></div>
+            <div><img src="img/logos/sams.jpeg" alt="Sam's"></div>
+            <div><img src="img/logos/seventhG.jpeg" alt="Seventh Generation"></div>
+            <div><img src="img/logos/target.jpeg" alt="Target"></div>
+            <div><img src="img/logos/walmart.jpeg" alt="Walmart"></div>
+          </div><!-- storesCarousel -->
+        </div>
+        <div class="medium-4 medium-offset-1 columns">
+          <h3 id="contactus">Contact Us</h3> 
+          <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="email" placeholder="Confirm Email" required>
+            <label>Message:</label>
+            <textarea name="Message" rows="5"  onfocus="this.value=''; this.onfocus=null;">Dear Diapers Savers,</textarea>
+            <input type="submit" name="submit" value="Submit" class="button round center">
+          </form> 
+        </div>
+      </div><!-- footer-top-->
+      <nav id="footer-nav">
+        <h6 id="rightsFooter">© 2014 Diapers Savers LLC</h6>
+        <ul class="inline-list">
+          <li><a href="terms">Terms of Service</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="privacy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+   </footer>
+
+    <!-- ************  reveal divs   ************* -->
+    <!-- top ad reveal modal -->
+    <div id="top-ad-Alert" class="reveal-modal" data-reveal>
+      <h2>Get an Alert on Price Drops!</h2>
+      <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+      <p><a href="#" data-reveal-id="secondModal" class="secondary button">Second Modal...</a></p>
+      <a class="close-reveal-modal">×</a>
+    </div><!-- top-ad-modal -->
+    
+    <!-- setAlert -->
+    <div id="setAlert" class="reveal-modal" data-reveal>
+      <h2>Set an Alert</h2>
+      <form>
+        <label>Send me an Email Alert when this item's price drops to or below $</label>
+        <div id="comboInput">
+          <input type="text" name="alertPrice" id="alertPrice" size="3">
+          <input type="checkbox" name="alertIncShip" id="alertIncShip">
+          <label>Price Includes Shipping</label>
+        </div>
+        <label>Email:</label>
+        <input type="email" name="alertEmail" id="alertEmail">
+        <input type="submit" value="submit">
+        <input type="checkbox" name="sendOffers" id="sendOffers">
+        <label>Allow DiapersSavers to send me occasional site updates and offers</label>
+      </form>
+      <a class="close-reveal-modal">×</a>
+    </div><!-- setAlert -->
+
+    <!--  ******** javascript ********** -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script src="js/main.js"></script>
+    
+  
+  </body>
+</html>
+
+
+
+
